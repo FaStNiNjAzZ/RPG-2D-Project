@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 368170f9637c88b489c287110077e3ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5291994362968576289
+    second: HockeyMask_0
+  - first:
+      213: -8879745719191482171
+    second: HockeyMask_1
+  - first:
+      213: -6362114521131669169
+    second: HockeyMask_2
+  - first:
+      213: -70892805990507722
+    second: HockeyMask_3
+  - first:
+      213: 2304364728980313940
+    second: HockeyMask_4
+  - first:
+      213: -5031127795810446938
+    second: HockeyMask_5
+  - first:
+      213: 8460122989831048022
+    second: HockeyMask_6
+  - first:
+      213: -8411308125630601516
+    second: HockeyMask_7
+  - first:
+      213: 2893601714781471230
+    second: HockeyMask_8
+  - first:
+      213: -9029461349692452972
+    second: HockeyMask_9
+  - first:
+      213: -7291311854932286470
+    second: HockeyMask_10
+  - first:
+      213: -4425740959037534394
+    second: HockeyMask_11
+  - first:
+      213: 4916922636741916613
+    second: HockeyMask_12
+  - first:
+      213: -1179331822827735862
+    second: HockeyMask_13
+  - first:
+      213: -4766886858579226813
+    second: HockeyMask_14
+  - first:
+      213: -4484153836514516071
+    second: HockeyMask_15
+  - first:
+      213: -5740223556066273484
+    second: HockeyMask_16
+  - first:
+      213: 8798014450367431121
+    second: HockeyMask_17
+  - first:
+      213: -1093006307658835503
+    second: HockeyMask_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HockeyMask_0
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 2047
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1219c1eb5d0f07940800000000000000
+      internalID: 5291994362968576289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_1
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2047
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0dbc7b05ec4c480800000000000000
+      internalID: -8879745719191482171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_2
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1847
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49a79b0d8a35b7a0800000000000000
+      internalID: -6362114521131669169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_3
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1847
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b1ec95e53240ff0800000000000000
+      internalID: -70892805990507722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_4
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1647
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4579fcf038fbaff10800000000000000
+      internalID: 2304364728980313940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_5
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1647
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1df1ffce7dd2ab0800000000000000
+      internalID: -5031127795810446938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_6
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1647
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65bcefc1905686570800000000000000
+      internalID: 8460122989831048022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_7
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1647
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d66e6323d7054b80800000000000000
+      internalID: -8411308125630601516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_8
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1052
+        width: 557
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1c20bbd63282820800000000000000
+      internalID: 2893601714781471230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_9
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1457
+        width: 646
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f467a1eb8e0b280800000000000000
+      internalID: -9029461349692452972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_10
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1064
+        width: 557
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3aa2cbf7e00da90800000000000000
+      internalID: -7291311854932286470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_11
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 602
+        width: 256
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fcbacdb0c9492c0800000000000000
+      internalID: -4425740959037534394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_12
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 852
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7341f461b6c3440800000000000000
+      internalID: 4916922636741916613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_13
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 852
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4f90c94fb22afe0800000000000000
+      internalID: -1179331822827735862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_14
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 602
+        width: 256
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f48ed78ad98ddb0800000000000000
+      internalID: -4766886858579226813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_15
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 652
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993e85008d515c1c0800000000000000
+      internalID: -4484153836514516071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_16
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 652
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4371759b611a650b0800000000000000
+      internalID: -5740223556066273484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_17
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 452
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d187ea5783d81a70800000000000000
+      internalID: 8798014450367431121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HockeyMask_18
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 452
+        width: 77
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9dbbedd8cd4d0f0800000000000000
+      internalID: -1093006307658835503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HockeyMask_0: 5291994362968576289
+      HockeyMask_1: -8879745719191482171
+      HockeyMask_10: -7291311854932286470
+      HockeyMask_11: -4425740959037534394
+      HockeyMask_12: 4916922636741916613
+      HockeyMask_13: -1179331822827735862
+      HockeyMask_14: -4766886858579226813
+      HockeyMask_15: -4484153836514516071
+      HockeyMask_16: -5740223556066273484
+      HockeyMask_17: 8798014450367431121
+      HockeyMask_18: -1093006307658835503
+      HockeyMask_2: -6362114521131669169
+      HockeyMask_3: -70892805990507722
+      HockeyMask_4: 2304364728980313940
+      HockeyMask_5: -5031127795810446938
+      HockeyMask_6: 8460122989831048022
+      HockeyMask_7: -8411308125630601516
+      HockeyMask_8: 2893601714781471230
+      HockeyMask_9: -9029461349692452972
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
