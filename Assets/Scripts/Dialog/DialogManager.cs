@@ -10,6 +10,7 @@ public class DialogManager : MonoBehaviour
     public Transform optionsContainer; // Container for option buttons
     public GameObject optionParentPrefab; // Prefab with a parent GameObject and button
     public GameObject dialogPanel; // Dialog UI panel
+    public GameObject mainCanvasGroupUI;
 
     private List<GameObject> optionObjects = new List<GameObject>(); // Store created options for re-use
 
@@ -80,7 +81,7 @@ public class DialogManager : MonoBehaviour
         }
     }
 
-    private void CloseDialog()
+    public void CloseDialog()
     {
         HideDialogUI();
 
@@ -96,6 +97,8 @@ public class DialogManager : MonoBehaviour
         dialogPanel.SetActive(true);
         dialogText.gameObject.SetActive(true);
         optionsContainer.gameObject.SetActive(true);
+
+        mainCanvasGroupUI.SetActive(false);
     }
 
     private void HideDialogUI()
@@ -103,6 +106,8 @@ public class DialogManager : MonoBehaviour
         dialogPanel.SetActive(false);
         dialogText.gameObject.SetActive(false);
         optionsContainer.gameObject.SetActive(false);
+
+        mainCanvasGroupUI.SetActive(true);
     }
 
     private GameObject GetOrCreateOptionParent()
