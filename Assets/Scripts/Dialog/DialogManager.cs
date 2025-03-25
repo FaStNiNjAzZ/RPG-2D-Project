@@ -6,86 +6,118 @@ using UnityEngine.UI;
 public class DialogManager : MonoBehaviour
 {
     [Header("UI Elements")]
-    public TMP_Text dialogText; // UI text for dialog
-    public Transform optionsContainer; // Container for option buttons
-    public GameObject optionParentPrefab; // Prefab with a parent GameObject and button
-    public GameObject dialogPanel; // Dialog UI panel
+    public TMP_Text dialogText;
+    public Transform optionsContainer;
+    public GameObject optionParentPrefab;
+    public GameObject dialogPanel;
     public GameObject mainCanvasGroupUI;
 
-    private List<GameObject> optionObjects = new List<GameObject>(); // Store created options for re-use
+    private List<GameObject> optionObjects = new List<GameObject>();
+    public GameManager gameManager;
+
+    private Stack<DialogNode> previousDialogs = new Stack<DialogNode>(); // Track previous dialogs
+    private DialogNode currentDialog;
 
     private void Start()
     {
-        // Ensure dialog is hidden at the start
         HideDialogUI();
     }
 
     public void StartDialog(DialogNode dialog)
     {
+        previousDialogs.Clear(); // Reset history when starting a new dialog
         ShowDialogUI();
         DisplayDialog(dialog);
     }
 
     public void DisplayDialog(DialogNode dialog)
     {
-        // Deactivate any existing options
+        if (currentDialog != null && dialog != currentDialog)
+        {
+            previousDialogs.Push(currentDialog); // Store the current dialog before changing
+        }
+
+        currentDialog = dialog; // Update the current dialog
+
         foreach (GameObject optionObject in optionObjects)
         {
             optionObject.SetActive(false);
         }
 
-        // Set the dialog text
         dialogText.text = dialog.text;
 
-        // Create or activate buttons for each dialog option
         foreach (DialogOption option in dialog.options)
         {
-            GameObject optionParent = GetOrCreateOptionParent();
-            Button button = optionParent.GetComponentInChildren<Button>();
-            TMP_Text buttonText = button.GetComponentInChildren<TMP_Text>();
+            if (string.IsNullOrEmpty(option.requiredVariable) || gameManager.GetVariable(option.requiredVariable))
+            {
+                GameObject optionParent = GetOrCreateOptionParent();
+                Button button = optionParent.GetComponentInChildren<Button>();
+                TMP_Text buttonText = button.GetComponentInChildren<TMP_Text>();
 
-            buttonText.text = option.optionText;
+                buttonText.text = option.optionText;
 
-            // Clear existing listeners and add a new one
-            button.onClick.RemoveAllListeners();
-            button.onClick.AddListener(() => OnOptionSelected(option));
+                button.onClick.RemoveAllListeners();
+                button.onClick.AddListener(() => OnOptionSelected(option));
 
-            optionParent.SetActive(true); // Activate the button
+                optionParent.SetActive(true);
+            }
         }
 
-        // Create or activate the Exit button
+        // ? Only show the Back button if `allowBack` is true
+        if (previousDialogs.Count > 0 && currentDialog.allowBack)
+        {
+            GameObject backButtonParent = GetOrCreateOptionParent();
+            Button backButton = backButtonParent.GetComponentInChildren<Button>();
+            TMP_Text backButtonText = backButton.GetComponentInChildren<TMP_Text>();
+
+            backButtonText.text = "Back";
+            backButton.onClick.RemoveAllListeners();
+            backButton.onClick.AddListener(GoBackToPreviousDialog);
+
+            backButtonParent.SetActive(true);
+        }
+
+        // Create the Exit button
         GameObject exitParent = GetOrCreateOptionParent();
         Button exitButton = exitParent.GetComponentInChildren<Button>();
         TMP_Text exitButtonText = exitButton.GetComponentInChildren<TMP_Text>();
 
         exitButtonText.text = "Exit";
-
-        // Clear existing listeners and add a new one
         exitButton.onClick.RemoveAllListeners();
         exitButton.onClick.AddListener(CloseDialog);
 
-        exitParent.SetActive(true); // Activate the exit button
+        exitParent.SetActive(true);
     }
 
     private void OnOptionSelected(DialogOption selectedOption)
     {
-        if (selectedOption.nextDialog != null)
+        if (selectedOption.repeatDialog)
         {
-            // Display the next dialog node
+            DisplayDialog(currentDialog); // Re-display the same dialog
+        }
+        else if (selectedOption.nextDialog != null)
+        {
             DisplayDialog(selectedOption.nextDialog);
         }
         else
         {
-            // Close dialog if no further options exist
             CloseDialog();
+        }
+    }
+
+    public void GoBackToPreviousDialog()
+    {
+        if (previousDialogs.Count > 0)
+        {
+            DialogNode previousDialog = previousDialogs.Pop(); // Get the last dialog
+            DisplayDialog(previousDialog);
         }
     }
 
     public void CloseDialog()
     {
         HideDialogUI();
-
-        // Deactivate all option buttons for reuse
+        previousDialogs.Clear();
         foreach (GameObject optionObject in optionObjects)
         {
             optionObject.SetActive(false);
@@ -97,7 +129,6 @@ public class DialogManager : MonoBehaviour
         dialogPanel.SetActive(true);
         dialogText.gameObject.SetActive(true);
         optionsContainer.gameObject.SetActive(true);
-
         mainCanvasGroupUI.SetActive(false);
     }
 
@@ -106,22 +137,19 @@ public class DialogManager : MonoBehaviour
         dialogPanel.SetActive(false);
         dialogText.gameObject.SetActive(false);
         optionsContainer.gameObject.SetActive(false);
-
         mainCanvasGroupUI.SetActive(true);
     }
 
     private GameObject GetOrCreateOptionParent()
     {
-        // Try to find an existing deactivated option
         foreach (GameObject optionObject in optionObjects)
         {
             if (!optionObject.activeSelf)
             {
-                return optionObject; // Reuse an existing deactivated option
+                return optionObject;
             }
         }
 
-        // If none are available, create a new one
         GameObject newOptionParent = Instantiate(optionParentPrefab, optionsContainer);
         optionObjects.Add(newOptionParent);
         return newOptionParent;

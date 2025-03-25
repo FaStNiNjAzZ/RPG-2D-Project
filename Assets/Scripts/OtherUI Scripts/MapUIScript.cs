@@ -40,6 +40,9 @@ public class MapUIScript : MonoBehaviour
             case 9: // The Airstrip
                 playerCharacter.transform.position = new Vector3(5000, -5000, 0);
                 break;
+            case 343: // The dev area
+                playerCharacter.transform.position = new Vector3(25000, 25000, 0);
+                break;
 
         }
     }
