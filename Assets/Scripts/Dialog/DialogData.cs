@@ -25,7 +25,7 @@ public class DialogData : MonoBehaviour
     public DialogNode npc1Start = new DialogNode
     {
         text = "Hello, traveler! How can I help you?",
-        allowBack = false, // ❌ Back is disabled in this node
+        allowBack = false, // Back is disabled in this node
         options = new List<DialogOption>
         {
             new DialogOption
@@ -34,7 +34,7 @@ public class DialogData : MonoBehaviour
                 nextDialog = new DialogNode
                 {
                     text = "I sell potions and rare artifacts. Interested?",
-                    allowBack = true, // ✅ Back is enabled in this node
+                    allowBack = true, // Back is enabled in this node
                     options = new List<DialogOption>
                     {
                         new DialogOption { optionText = "Show me your wares.", nextDialog = null },

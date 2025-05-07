@@ -5,9 +5,10 @@ public class NPCInteraction : MonoBehaviour
     public DialogManager dialogManager;  // Reference to the dialog manager
 
 
+
     public DialogNode npcDialog;         // The specific dialog node for this NPC
 
-    private bool isPlayerInRange = false;
+    public bool isPlayerInRange = false;
     public float interactionRange = 3f;  // Range for interaction
     public KeyCode interactKey = KeyCode.E;  // Key to interact
 

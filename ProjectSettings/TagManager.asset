@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - press_E_Text
+  - NPC_Talkable
+  - Door_Mira_House_Interior
+  - Door_Mira_House_Exterior
+  - Map_To_Library
+  - Door_Library_Interior
+  - Door_Library_Exterior
+  - Computer_Module_Library
+  - Door_Bunker_Interior
+  - Door_Bunker_Exterior
   layers:
   - Default
   - TransparentFX

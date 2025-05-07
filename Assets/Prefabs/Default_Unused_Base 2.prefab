@@ -1903,13 +1903,21 @@ MonoBehaviour:
           nextDialog:
             text: 
             options: []
+            allowBack: 0
           requiredVariable: 
+          repeatDialog: 0
+        allowBack: 0
       requiredVariable: 
+      repeatDialog: 0
     - optionText: I like trains
       nextDialog:
         text: 'NPC_1: Woah that''s crazy'
         options: []
+        allowBack: 0
       requiredVariable: 
+      repeatDialog: 0
+    allowBack: 0
+  isPlayerInRange: 0
   interactionRange: 3
   interactKey: 101
 --- !u!1 &6777756412140435764

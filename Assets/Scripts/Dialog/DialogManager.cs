@@ -63,7 +63,7 @@ public class DialogManager : MonoBehaviour
             }
         }
 
-        // ? Only show the Back button if `allowBack` is true
+        // Only show the Back button if `allowBack` is true
         if (previousDialogs.Count > 0 && currentDialog.allowBack)
         {
             GameObject backButtonParent = GetOrCreateOptionParent();
