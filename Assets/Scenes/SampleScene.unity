@@ -4646,6 +4646,11 @@ PrefabInstance:
       propertyPath: dialogManager
       value: 
       objectReference: {fileID: 2077993921}
+    - target: {fileID: 1477403982143420025, guid: 837713d405ccd694f87077821b34a4b0, type: 3}
+      propertyPath: npcDialog.options.Array.data[0].optionText
+      value: This is a very long, multi line text conversation to test the UI functionality.
+        I really hope this works correctly otherwise it will not be ideal.
+      objectReference: {fileID: 0}
     - target: {fileID: 1578162048978316839, guid: 837713d405ccd694f87077821b34a4b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
@@ -34947,7 +34952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2028346933
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35537,6 +35542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   display_Text_GUI: {fileID: 1250221117}
   keypad_UI: {fileID: 751215867}
+  main_UI: {fileID: 2028346932}
   endgame_Dax_Crowne: {fileID: 1080601709}
 --- !u!1 &2084330404
 GameObject:

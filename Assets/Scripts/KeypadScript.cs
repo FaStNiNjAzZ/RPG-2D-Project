@@ -11,21 +11,22 @@ public class KeypadScript : MonoBehaviour
     // Game Objects
     public TextMeshProUGUI display_Text_GUI;
     public GameObject keypad_UI;
+    public GameObject main_UI;
     public GameObject endgame_Dax_Crowne;
 
     public void Keypad_Button_Press(int digit)
     {
-        if (digit == 99)
+        if (digit == 99)        // Check Combination, green if correct, red if false. || "Enter" Button
         {
             Check_Combination();
         }
-        else if (digit == 88)
+        else if (digit == 88)   // Close Screen UI and Input || "<" Button
         {
             Clear_Input();
         }
-        else if (digit == 77)
+        else if (digit == 77)   // Close Keypad UI || "X" Button
         {
-            Close_Keypad_UI();
+            Toggle_Keypad_UI(false); 
         }
         else
         {
@@ -63,8 +64,18 @@ public class KeypadScript : MonoBehaviour
         Debug.Log("Cleared!");
     }
 
-    void Close_Keypad_UI()
+    void Toggle_Keypad_UI(bool active)
     {
-        keypad_UI.SetActive(false);
+        if (!active)
+        {
+            keypad_UI.SetActive(false);
+            main_UI.SetActive(true);
+        }
+        else
+        {
+            keypad_UI.SetActive(true);
+            main_UI.SetActive(false);
+        }
+
     }
 }
