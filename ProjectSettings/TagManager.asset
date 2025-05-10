@@ -14,6 +14,9 @@ TagManager:
   - Computer_Module_Library
   - Door_Bunker_Interior
   - Door_Bunker_Exterior
+  - Trigger_Disguise_Spawn_Scientist
+  - Player_Disguise_Object
+  - Dax_Crowne_Group_Tag
   layers:
   - Default
   - TransparentFX

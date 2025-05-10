@@ -14,6 +14,11 @@ public class KeypadScript : MonoBehaviour
     public GameObject main_UI;
     public GameObject endgame_Dax_Crowne;
 
+    private void Start()
+    {
+        endgame_Dax_Crowne.SetActive(true);
+    }
+
     public void Keypad_Button_Press(int digit)
     {
         if (digit == 99)        // Check Combination, green if correct, red if false. || "Enter" Button
@@ -48,6 +53,7 @@ public class KeypadScript : MonoBehaviour
         if (input_Combination == COMBINATION_ANSWER)
         {
             display_Text_GUI.color = Color.green;
+            endgame_Dax_Crowne.SetActive(false);
         }
         else 
         {

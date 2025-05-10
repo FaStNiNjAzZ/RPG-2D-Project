@@ -60,7 +60,17 @@ public class PlayerInRangeScript : MonoBehaviour
 
         if (other.CompareTag("Map_To_Library"))
         {
-            isPlayerInRangeOfDoor = false;
+            isPlayerInRangeOfItem = false;
+        }
+
+        if (other.CompareTag("Player_Disguise_Object"))
+        {
+            isPlayerInRangeOfItem = false;
+        }
+
+        if (other.CompareTag("Computer_Module_Library"))
+        {
+            isPlayerInRangeOfItem = false;
         }
     }
 
@@ -114,10 +124,16 @@ public class PlayerInRangeScript : MonoBehaviour
         if (other.CompareTag("Map_To_Library"))
         {
             isPlayerInRangeOfItem = true;
-            if (Input.GetKey(KeyCode.E))
-            {
-                libraryMapLocationGroup.SetActive(true);
-            }
+        }
+
+        if (other.CompareTag("Player_Disguise_Object"))
+        {
+            isPlayerInRangeOfItem = true;
+        }
+
+        if (other.CompareTag("Computer_Module_Library"))
+        {
+            isPlayerInRangeOfItem = true;
         }
     }
 
