@@ -17,6 +17,10 @@ TagManager:
   - Trigger_Disguise_Spawn_Scientist
   - Player_Disguise_Object
   - Dax_Crowne_Group_Tag
+  - Key_Pad_Tag
+  - End_Game_Computer_Module
+  - Bunker_Valoram_Tag
+  - Bunker_Endgame_Tag
   layers:
   - Default
   - TransparentFX

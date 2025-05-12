@@ -58,6 +58,22 @@ public class PlayerInRangeScript : MonoBehaviour
             isPlayerInRangeOfDoor = false;
         }
 
+        if (other.CompareTag("Door_Library_Exterior"))
+        {
+
+            isPlayerInRangeOfDoor = false;
+        }
+
+        if (other.CompareTag("Door_Library_Interior"))
+        {
+            isPlayerInRangeOfDoor = false;
+        }
+
+        if (other.CompareTag("Door_Bunker_Exterior"))
+        {
+            isPlayerInRangeOfDoor = false;
+        }
+
         if (other.CompareTag("Map_To_Library"))
         {
             isPlayerInRangeOfItem = false;
@@ -118,6 +134,16 @@ public class PlayerInRangeScript : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 playerCharacter.transform.position = new Vector3(-2000, -2000, 0);
+            }
+        }
+
+        if (other.CompareTag("Door_Bunker_Exterior"))
+        {
+
+            isPlayerInRangeOfDoor = true;
+            if (Input.GetKey(KeyCode.E))
+            {
+                playerCharacter.transform.position = new Vector3(1000, 1000, 0);
             }
         }
 

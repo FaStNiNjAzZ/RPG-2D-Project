@@ -17,6 +17,7 @@ public class DisguiseScript : MonoBehaviour
     public GameObject map_To_Library_World_Object;
     public GameObject disguise_Clothing_World_Object;
     public GameObject rust_Town_NPC_Group_Game_Object;
+    public GameObject rust_Town_NPC_Original_Group_Game_Object;
     public GameObject dax_Crowne_Group_Game_Object;
 
     // UI Game Objects
@@ -31,7 +32,8 @@ public class DisguiseScript : MonoBehaviour
         map_New_Pine_Button_Group.SetActive(false);
         map_To_Library_World_Object.SetActive(true);
 
-        scientist_Game_Object.SetActive(false);
+        rust_Town_NPC_Original_Group_Game_Object.SetActive(true);
+        rust_Town_NPC_Group_Game_Object.SetActive(false);
         dax_Crowne_Group_Game_Object.SetActive(false);
     }
 
@@ -124,6 +126,7 @@ public class DisguiseScript : MonoBehaviour
         if (is_Player_In_Range_Of_Dax_Crowne_Group && Input.GetKeyDown(INTERACT_KEY))
         {
             rust_Town_NPC_Group_Game_Object.SetActive(true);
+            rust_Town_NPC_Original_Group_Game_Object.SetActive(false);
             map_Button_Group.SetActive(true);
         }
 
